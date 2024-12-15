@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Product Carousel Section -->
+    <section class="product-carousel">
+      <div class="carousel-main">
+        <button class="carousel-btn prev-btn">❮</button>
+        <img id="main-image" class="main-image" src="" alt="Product Image">
+        <button class="carousel-btn next-btn">❯</button>
+      </div>
+      <div class="thumbnails" id="thumbnail-container"></div>
+    </section>
+
+    <!-- Product Information Section -->
+    <section class="product-info">
+      <h1 class="product-name" id="product-name">Stylish Chair</h1>
+      <p class="product-price" id="product-price">$199.99</p>
+      <p class="product-description" id="product-description">
+        A modern, comfortable chair that fits perfectly in any space.
+      </p>
+
+      <label for="variants" class="variant-label">Choose Color:</label>
+      <select id="variants" class="variant-selector">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+
+      <div class="quantity-container">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1" class="quantity-input">
+      </div>
+
+      <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+      <p class="confirmation-message" id="confirmation-message"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
